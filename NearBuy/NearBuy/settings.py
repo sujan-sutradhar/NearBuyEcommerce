@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'Store'
+    'Store',
+    'Category',
+    'Accounts'
 ]
 
 MIDDLEWARE = [
@@ -69,6 +71,8 @@ TEMPLATES = [
 ]
 
 WSGI_APPLICATION = 'NearBuy.wsgi.application'
+AUTH_USER_MODEL = 'Accounts.Account'
+
 
 
 # Database
